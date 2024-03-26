@@ -6,8 +6,10 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
+import { IconHome } from "@tabler/icons-react";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const FloatingNav = ({
   navItems,
@@ -20,6 +22,8 @@ export const FloatingNav = ({
   }[];
   className?: string;
 }) => {
+  const path = usePathname()
+
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(true);
@@ -56,12 +60,16 @@ export const FloatingNav = ({
           className
         )}
       >
+        <Link href="/" className="relative items-center flex space-x-1 dark:hover:text-neutral-300 hover:text-green-500 font-semibold">
+        <IconHome  size={20}/>
+        </Link>
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+              "relative items-center flex space-x-1 dark:hover:text-neutral-300 hover:text-green-500 font-semibold",
+              path.startsWith(navItem.link) ? 'text-green-500' : 'text-neutral-700'
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>

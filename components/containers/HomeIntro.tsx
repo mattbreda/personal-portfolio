@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 import Button from "../ui/Button";
 
@@ -11,10 +10,10 @@ export const HomeIntro = () => {
         <div className="w-full pt-5 px-2.5 md:w-2/3 md:p-20">
           <TextGenerateEffect
             words="How can I help you?"
-            className="mb-5 underline text-2xl text-4xl font-semibold text-white"
+            className="mb-5 text-2xl md:text-4xl font-semibold text-white"
           />
           <TextGenerateEffect
-            words="I am a passionate Frontend Developer specialized in JavaScript. With a keen eye for detail and a knack for crafting engaging user experiences, thanks to my Data Visualization background I thrive in turning complex data sets into meaningful visual narratives."
+            words="I am a passionate Frontend Developer specialized in JavaScript. With a keen eye for detail and a knack for crafting engaging user experiences, thanks to my Data Visualization background I thrive in turning complex data sets into meaningful visual narratives. I can help you to develop websites, webapps, ecomerces or guide you into chosing the best technical solution for your business."
             className="text-xl md:text-2xl font-medium text-white"
           />
         </div>

@@ -1,3 +1,4 @@
+import { HomeBento } from "@/components/containers/HomeBento";
 import { HomeIntro } from "@/components/containers/HomeIntro";
 import { HomePageHero } from "@/components/containers/HomePageHero";
 import { HomeStack } from "@/components/containers/HomeStack";
@@ -8,6 +9,7 @@ export default function Home() {
       <HomePageHero />
       <HomeIntro />
       <HomeStack />
+      <HomeBento />
     </main>
   );
 }
