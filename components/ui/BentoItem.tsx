@@ -33,7 +33,7 @@ export const BentoGridItem = ({
         </div>
        
       </div>
-      <div className="mt-2">{action}</div>
+      {action ? <div className="mt-2">{action}</div> : null}
     </div>
   );
 };
