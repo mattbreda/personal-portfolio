@@ -4,6 +4,7 @@ import "./globals.css";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 const rMono = Roboto_Mono({ subsets: ["latin"] });
+import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: "Matteo Breda | Developer",
@@ -41,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${rMono.className} bg-neutral-100`}>
+        <Toaster />
         <main className="w-full relative">
           <FloatingNav navItems={navItems} />
           {children}
