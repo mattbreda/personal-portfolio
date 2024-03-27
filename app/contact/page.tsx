@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-2.5 pt-10 w-full">
+    <main className="flex min-h-screen flex-col items-center justify-between max-md:pb-[5vh] p-2.5 pt-10 w-full">
       <div className="max-w-[1400px] mx-auto w-full">
         <TextGenerateEffect
           words="Contacts"

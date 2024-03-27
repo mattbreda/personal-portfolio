@@ -1,36 +1,39 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
-import "./globals.css";
+import { IconList, IconMessage, IconUser } from "@tabler/icons-react";
+import { Toaster } from "react-hot-toast";
+
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
-const rMono = Roboto_Mono({ subsets: ["latin"] });
-import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: "Matteo Breda | Developer",
-  description: "Welcome to the website of Matteo Breda, freelance javascript developer!",
+  description:
+  "Welcome to the website of Matteo Breda, freelance javascript developer!",
 };
 
+const rMono = Roboto_Mono({ subsets: ["latin"] });
+
 const navItems = [
- /*  {
+  /*  {
     name: "Home",
     link: "/",
     icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
   }, */
   {
+    name: "Portfolio",
+    link: "/portfolio",
+    icon: <IconList className="h-4 w-4" />,
+  },
+  {
     name: "About",
     link: "/about",
-    icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    icon: <IconUser className="h-4 w-4" />,
   },
   {
     name: "Contact",
     link: "/contact",
-    icon: <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />,
-  },
-  {
-    name: "Portfolio",
-    link: "/portfolio",
-    icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    icon: <IconMessage className="h-4 w-4" />,
   },
 ];
 
