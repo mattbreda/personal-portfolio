@@ -99,13 +99,13 @@ export const ProjectsGrid = () => {
             <CardBody className="bg-neutral-700 relative group/card  border-black/[0.1] w-full h-auto rounded-xl p-2.5 border">
               <CardItem
                 translateZ="50"
-                className="text-xl font-bold text-green-500 dark:text-white"
+                className="text-xl font-bold text-green-500 "
               >
                 {item.title}
               </CardItem>
               <CardItem
                 translateZ="60"
-                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                className="text-neutral-500 text-sm max-w-sm mt-2"
               >
                 <div className="flex flex-row gap-x-2.5">
                   {item.categories.map((cat) => (

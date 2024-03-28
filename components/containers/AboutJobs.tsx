@@ -66,7 +66,7 @@ export const jobs = [
 export const AboutJobs = () => {
   return (
     <div className="w-full rounded-lg bg-neutral-700 bg-dot-white/[0.2]  mt-2.5 p-2.5 flex flex-col">
-      <h1 className=" text-3xl font-semibold text-green-500 mb-5">
+      <h1 className="text-2xl md:text-3xl font-semibold text-green-500 mb-2.5">
         My work experience
       </h1>
       <div className="w-full flex flex-col md:flex-row gap-x-5">

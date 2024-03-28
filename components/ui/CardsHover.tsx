@@ -38,7 +38,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-green-500 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-green-500 block  rounded-2xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -81,7 +81,9 @@ export const Card = ({
       )}
     >
       <div className="relative z-50 w-full h-full">
-        <div className="p-4 w-full h-full flex flex-col items-center justify-center">{children}</div>
+        <div className="p-4 w-full h-full flex flex-col items-center justify-center">
+          {children}
+        </div>
       </div>
     </div>
   );
@@ -95,7 +97,10 @@ export const CardTitle = ({
 }) => {
   return (
     <h4
-      className={cn("text-neutral-700 font-semibold text-xl tracking-wide mb-8", className)}
+      className={cn(
+        "text-neutral-700 font-semibold text-xl tracking-wide mb-8",
+        className
+      )}
     >
       {children}
     </h4>

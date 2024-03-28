@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 
 export const HomeIntro = () => {
   return (
-    <section className="w-full px-2.5 pb-2.5 md:h-screen">
+    <section className="w-full px-2.5 pb-2.5 md:h-screen" id="scroll-to">
       <div className="rounded-2xl relative w-full h-full bg-neutral-700 bg-dot-white/[0.2] flex flex-col md:flex-row items-center">
         <div className="absolute rounded-2xl pointer-events-none inset-0 flex items-center justify-center  bg-neutral-700 [mask-image:radial-gradient(ellipse_at_center,transparent_70%,white)] md:[mask-image:radial-gradient(ellipse_at_center,transparent_50%,white)]"></div>
 

@@ -65,8 +65,8 @@ export const projects = [
 ];
 export const HomeStack = () => {
   return (
-    <div className=" w-full rounded-lg px-2.5">
-      <div className="w-full rounded-lg bg-neutral-800 px-2.5 md:px-20">
+    <div className=" w-full px-2.5">
+      <div className="w-full rounded-2xl bg-neutral-800 px-2.5 md:px-20">
         <h1 className="pt-10 md:pt-20 text-3xl font-semibold text-green-500">My tech stack</h1>
         <div className="w-full ">
           <HoverEffect items={projects} />

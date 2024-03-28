@@ -37,7 +37,7 @@ const Accordion = ({
         className="w-full flex flex-row items-center justify-between text-slate-100 p-2.5 cursor-pointer"
         onClick={() => toggleSection()}
       >
-        <div className="font-semibold text-l md:text-xl">{title} <span className="max-md:hidden">| {position}</span></div>
+        <div className="font-semibold text-md md:text-xl">{title} <span className="max-md:hidden">| {position}</span></div>
         <IconPlus
           size={32}
           className={`transition all duration-200 ${
@@ -53,7 +53,7 @@ const Accordion = ({
       >
         <div
           ref={heightRef}
-          className="w-full md:m-2.5 max-md:px-2.5 pb-5 text-white flex flex-col md:flex-row justify-between gap-x-5"
+          className="w-full md:m-2.5 max-md:px-2.5 pb-5 text-white max-md:text-sm flex flex-col md:flex-row justify-between md:gap-x-10"
         >
           <div className="w-full md:w-1/2 flex flex-col gap-y-2.5">
             <div className="w-full">
@@ -64,7 +64,7 @@ const Accordion = ({
             </div>
           </div>
           <div className="w-full md:w-1/2 max-md:mt-2.5">
-            <span className="underline mb-2.5">Tech stack: </span>
+            <div className="underline mb-2.5">Tech stack: </div>
 
             <div className="w-full flex flex-row flex-wrap gap-2.5 items-center ">
               {stack?.map((s) => (

@@ -106,7 +106,7 @@ export const ModalProjects = ({
                 })}
               </div>
               <GrowingLine className="my-2.5" />
-              <div className="flex flex-row items-center gap-x-2.5">
+              <div className="flex flex-row w-full flex-wrap items-center gap-x-2.5">
                 <span className="text-slate-100">Technologies:</span>{" "}
                 {projectDetails?.tech?.map((tech) => (
                   <div

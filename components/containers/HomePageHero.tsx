@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 import Button from "../ui/Button";
+import Link from "next/link";
+import { DiscoverMore } from "../ui/DiscoverMore";
 
 export const HomePageHero = () => {
   return (
@@ -16,10 +18,8 @@ export const HomePageHero = () => {
           />
         </h1>
         <div className="mt-10 flex flex-col md:flex-row gap-5 items-start">
-          <Button label="Contact me" />
-          <button className=" text-base px-4 py-2 border-2 border-green-500 rounded-md flex self-start bg-green-500 text-slate-100 hover:bg-transparent hover:text-green-500 hover:shadow-[4px_4px_0px_0px_rgba(34,177,94)] transition duration-200">
-            Discover more
-          </button>
+          <Link href="/contact"><Button label="Contact me" /></Link>
+          <DiscoverMore />
         </div>
       </div>
       <div className="w-full max-md:flex-grow md:h-full rounded-2xl bg-green-500 flex flex-col justify-end group overflow-hidden">

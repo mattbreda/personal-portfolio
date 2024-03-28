@@ -62,13 +62,13 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "max-md:hidden flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[50] px-8 py-2  items-center justify-center space-x-4",
+          "max-md:hidden flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent  rounded-full  bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[50] px-8 py-2  items-center justify-center space-x-4",
           className
         )}
       >
         <Link
           href="/"
-          className="relative items-center flex space-x-1 dark:hover:text-neutral-300 hover:text-green-500 font-semibold"
+          className="relative items-center flex space-x-1  hover:text-green-500 font-semibold"
         >
           <IconHome size={20} />
         </Link>
@@ -77,7 +77,7 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative items-center flex space-x-1 dark:hover:text-neutral-300 hover:text-green-500 font-semibold",
+              "relative items-center flex space-x-1  hover:text-green-500 font-semibold",
               path.startsWith(navItem.link)
                 ? "text-green-500"
                 : "text-neutral-700"
@@ -102,13 +102,13 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          `md:hidden flex max-w-fit fixed bottom-[5dvh] inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-8 py-2  items-center justify-center space-x-4`,
+          `md:hidden flex max-w-fit fixed bottom-[5dvh] inset-x-0 mx-auto border border-transparent  rounded-full  bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-8 py-2  items-center justify-center space-x-4`,
           className
         )}
       >
         <Link
           href="/"
-          className="relative items-center flex space-x-1 dark:hover:text-neutral-300 hover:text-green-500 font-semibold"
+          className="relative items-center flex space-x-1  hover:text-green-500 font-semibold"
         >
           <IconHome size={20} />
         </Link>
@@ -117,7 +117,7 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative items-center flex space-x-1 dark:hover:text-neutral-300 hover:text-green-500 font-semibold",
+              "relative items-center flex space-x-1  hover:text-green-500 font-semibold",
               path.startsWith(navItem.link)
                 ? "text-green-500"
                 : "text-neutral-700"

@@ -16,24 +16,42 @@ export const HomeBento = () => {
   const items = [
     {
       title: "Do you want to know more about me?",
-      description: "Check the about page to discover more about my education and previous jobs.",
-      icon: <IconSignature className="h-4 w-4 text-slate-100 group-hover/bento:text-green-500 transition duration-200" />,
-      action: <Link href="/about"><Button label="About" className="text-slate-100"/></Link>
+      description:
+        "Check the about page to discover more about my education and previous jobs.",
+      icon: (
+        <IconSignature className="h-4 w-4 text-slate-100 group-hover/bento:text-green-500 transition duration-200" />
+      ),
+      action: (
+        <Link href="/about">
+          <Button label="About" className="text-slate-100" />
+        </Link>
+      ),
     },
     {
       title: "Do you want to see some of my projects?",
-      description: "Check my porfolio to see some of my latest works and projects",
-      icon: <IconPolaroid className="h-4 w-4 text-slate-100 group-hover/bento:text-green-500 transition duration-200" />,
-      action: <Button label="Porfolio" className="text-slate-100" />
-
+      description:
+        "Check my porfolio to see some of my latest works and projects",
+      icon: (
+        <IconPolaroid className="h-4 w-4 text-slate-100 group-hover/bento:text-green-500 transition duration-200" />
+      ),
+      action: (
+        <Link href="/portfolio">
+          <Button label="Porfolio" className="text-slate-100" />
+        </Link>
+      ),
     },
     {
       title: "Do you want to contact me?",
       description: "Check my contact page to see my contact informations",
 
-      icon: <IconPhoneCall className="h-4 w-4 text-slate-100 group-hover/bento:text-green-500 transition duration-200" />,
-      action: <Button label="Contacts" className="text-slate-100"/>
-
+      icon: (
+        <IconPhoneCall className="h-4 w-4 text-slate-100 group-hover/bento:text-green-500 transition duration-200" />
+      ),
+      action: (
+        <Link href="/contact">
+          <Button label="Contacts" className="text-slate-100" />
+        </Link>
+      ),
     },
   ];
 
@@ -48,27 +66,12 @@ export const HomeBento = () => {
               description={item.description}
               icon={item.icon}
               action={item.action}
-              className={`${i === 3 || i === 6 ? "md:col-span-2" : ""} bg-neutral-700 text-slate-100`}
+              className={`${
+                i === 3 || i === 6 ? "md:col-span-2" : ""
+              } bg-neutral-700 text-slate-100`}
             />
           ))}
         </BentoGrid>
-
-        {/* <div className="w-full grid grid-cols-3 gap-20">
-          <div className="w-full bg-slate-500 rounded-xl ">
-            <div>Do you want to know more about me?</div>
-            <Button label="About me" />
-          </div>
-          <div className="w-full bg-slate-500 rounded-xl ">
-            <div>Do you want to check my projects?</div>
-
-            <Button label="Portfolio" />
-          </div>
-          <div className="w-full bg-slate-500 rounded-xl ">
-            <div>Do you want to contact me?</div>
-
-            <Button label="Contacts" />
-          </div>
-        </div> */}
       </div>
     </section>
   );
