@@ -5,14 +5,19 @@ import { BentoGrid } from "../ui/BentoGrid";
 import Button from "../ui/Button";
 import { ModalProjects } from "../ui/ModalProjects";
 import { useState } from "react";
+import giuliaSmall from "@/public/screens/giulia-1-scaled.jpg";
 import giulia1 from "@/public/screens/giulia-1.jpg";
 import giulia2 from "@/public/screens/giulia-2.jpg";
+import tsSmall from "@/public/screens/ts-1-scaled.jpg";
 import ts1 from "@/public/screens/ts-1.jpg";
 import ts2 from "@/public/screens/ts-2.jpg";
+import edgeSmall from "@/public/screens/edge-1-scaled.jpg";
 import edge1 from "@/public/screens/edge-1.jpg";
 import edge2 from "@/public/screens/edge-2.jpg";
+import beaSmall from "@/public/screens/bea-1-scaled.jpg";
 import bea1 from "@/public/screens/bea-1.jpg";
 import bea2 from "@/public/screens/bea-2.jpg";
+import ftwSmall from "@/public/screens/ftw-1-scaled.jpg";
 import ftw1 from "@/public/screens/ftw-1.jpg";
 import ftw2 from "@/public/screens/ftw-2.jpg";
 
@@ -24,7 +29,7 @@ const projects = [
     description:
       "Personal website and portfolio made for Giulia Faraon, art director and digital designer. The frontend is built using Nuxt.js while the content is provided by Prismic, the headless CMS.",
     url: "https://giuliafaraon.com/",
-    image: "/screens/giulia-1-scaled.jpg",
+    image: giuliaSmall,
     images: [giulia1, giulia2],
   },
   {
@@ -34,7 +39,7 @@ const projects = [
     description:
       "Digital platform divided in three main parts, an open website with a blog, a webapp (subscription based) and a search engine (available only for subscribers). The website and the private area are made using Next.js and Prismic, while the frontend of the search engine is made with React. *Project made in collaboration with Noter",
     url: "https://www.the-syllabus.com/",
-    image: "/screens/ts-1-scaled.jpg",
+    image: tsSmall,
     images: [ts1, ts2],
   },
   {
@@ -44,7 +49,7 @@ const projects = [
     description:
       "Institutional website made for Edge MGMT. The frontend is built using Nuxt.js while the content is provided by Prismic, the headless CMS. *Project made in collaboration with Noter",
     url: "https://www.edgemgmt.it/",
-    image: "/screens/edge-1-scaled.jpg",
+    image: edgeSmall,
     images: [edge1, edge2],
   },
   /*  {
@@ -64,7 +69,7 @@ const projects = [
     description:
       "Institutional website Website and digital magazine (Cipolla) made for BEA.The frontend is built using Next.js while the content is provided by Prismic, the headless CMS. *Project made in collaboration with Noter",
     url: "https://www.beamediacompany.com/",
-    image: "/screens/bea-1-scaled.jpg",
+    image: beaSmall,
     images: [bea1, bea2],
   },
   {
@@ -74,7 +79,7 @@ const projects = [
     description:
       "Landing page made for Design&Develop products Jevero and Botcha. The page is made with Next.js while the form is handled by netlify lambda function.",
     url: "https://www.the-syllabus.com/",
-    image: "/screens/ftw-1-scaled.jpg",
+    image: ftwSmall,
     images: [ftw1, ftw2],
   },
 ];
@@ -121,10 +126,12 @@ export const ProjectsGrid = () => {
               <CardItem translateZ="100" className="w-full mt-2.5">
                 <Image
                   src={item.image}
-                  height="1000"
-                  width="1000"
+                  height="240"
+                  width={i === 1 ? "895":"430"}
+
                   className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                   alt="thumbnail"
+                  placeholder="blur"
                 />
               </CardItem>
               <div className="flex justify-end items-center mt-2.5">

@@ -14,7 +14,7 @@ export default function Contact() {
           <GrowingLine />
           <div className="bg-neutral-700 bg-dot-white/[0.2] w-full rounded-xl py-10 p-2.5 my-2.5">
             <TextGenerateEffect
-              words="For any additional information, quotation or request, don't hesitate to contact me"
+              words="If you require further details, a quote, or have any inquiries, please feel free to get in touch with me."
               className="text-2xl md:text-3xl text-green-500 mt-0"
             />
           </div>

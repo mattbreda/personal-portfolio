@@ -9,7 +9,7 @@ export const LinkedinCard = () => {
   return (
     <BentoGridItem
       title="Not enough?"
-      description="If you would like to see a more detailed resume, feel free to check my LinkedIn profile!"
+      description="If you're interested in a more comprehensive overview of my experience, I invite you to explore my LinkedIn profile for further details!"
       icon={<IconInfoHexagon />}
       action={
         <Link
