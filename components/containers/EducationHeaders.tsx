@@ -95,7 +95,7 @@ export const SkeletonThree = () => {
       className="flex  w-full h-32 min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2"
       style={{
         background:
-          "linear-gradient(-45deg, rgba(48,48,48,1) 0%, rgba(34,197,94,1) 38%, rgba(13,233,94,1) 78%, rgba(255,255,255,1) 100%);",
+          "linear-gradient(-45deg, rgba(48,48,48,1) 0%, rgba(34,197,94,1) 38%, rgba(13,233,94,1) 78%, rgba(255,255,255,1) 100%)",
         backgroundSize: "400% 400%",
       }}
     >

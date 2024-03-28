@@ -67,7 +67,7 @@ const items = [
 ];
 export const EducationAndOther = () => {
   return (
-    <div className="w-full rounded-lg bg-slate-100 bg-dot-white/[0.2]  mt-10 p-2.5 flex flex-col">
+    <div className="w-full rounded-lg bg-slate-100 bg-dot-white/[0.2]  mt-2.5 p-2.5 flex flex-col">
       <h1 className=" text-3xl font-semibold text-black-500 mb-5">
         Education & more
       </h1>
