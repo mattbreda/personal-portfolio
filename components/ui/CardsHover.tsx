@@ -55,7 +55,7 @@ export const HoverEffect = ({
           <Card>
             <CardTitle>{item.title}</CardTitle>
             {item.logo ? (
-              <div className="relative w-1/2 h-1/2 ">
+              <div className="relative min-w-1/2 min-h-1/2 w-1/2 h-1/2 flex-shrink-0">
                 <Image src={item.logo} alt={item.title} fill />
               </div>
             ) : null}
@@ -81,7 +81,7 @@ export const Card = ({
       )}
     >
       <div className="relative z-50 w-full h-full">
-        <div className="p-4 w-full h-full flex flex-col items-center justify-center">
+        <div className="p-4 w-full h-full flex flex-col gap-y-2.5 items-center justify-center">
           {children}
         </div>
       </div>
@@ -98,7 +98,7 @@ export const CardTitle = ({
   return (
     <h4
       className={cn(
-        "text-neutral-700 font-semibold text-xl tracking-wide mb-8",
+        "text-neutral-700 font-semibold text-xl tracking-wide",
         className
       )}
     >
