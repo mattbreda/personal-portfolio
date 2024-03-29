@@ -7,6 +7,8 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GTAG || "";
+
 export const metadata: Metadata = {
   title: "Matteo Breda | Developer",
   description:
@@ -51,7 +53,7 @@ export default function RootLayout({
           <FloatingNav navItems={navItems} />
           {children}
         </main>
-        <GoogleAnalytics gaId="G-K5GDJKESNZ" />
+        <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
       </body>
     </html>
   );
