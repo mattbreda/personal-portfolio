@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import { IconList, IconMessage, IconUser } from "@tabler/icons-react";
 import { Toaster } from "react-hot-toast";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
@@ -50,6 +51,7 @@ export default function RootLayout({
           <FloatingNav navItems={navItems} />
           {children}
         </main>
+        <GoogleAnalytics gaId="G-K5GDJKESNZ" />
       </body>
     </html>
   );
