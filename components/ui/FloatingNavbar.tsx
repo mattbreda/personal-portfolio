@@ -31,7 +31,7 @@ export const FloatingNav = ({
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
-    if (path.startsWith("/contact")) {
+    if (path.startsWith("/contact") || path.startsWith("/portfolio")) {
       setVisible(true);
       return;
     }
