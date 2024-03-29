@@ -7,7 +7,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
-export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GTAG || "";
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GTAG || "";
 
 export const metadata: Metadata = {
   title: "Matteo Breda | Developer",
