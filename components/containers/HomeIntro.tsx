@@ -3,11 +3,11 @@ import Button from "../ui/Button";
 
 export const HomeIntro = () => {
   return (
-    <section className="w-full px-2.5 pb-2.5 md:h-screen" id="scroll-to">
-      <div className="rounded-2xl relative w-full h-full bg-neutral-700 bg-dot-white/[0.2] flex flex-col md:flex-row items-center">
+    <section className="w-full px-2.5 pb-2.5 " id="scroll-to">
+      <div className="rounded-2xl relative w-full h-full bg-neutral-700 bg-dot-white/[0.2] flex flex-col md:flex-row items-center md:py-20">
         <div className="absolute rounded-2xl pointer-events-none inset-0 flex items-center justify-center  bg-neutral-700 [mask-image:radial-gradient(ellipse_at_center,transparent_70%,white)] md:[mask-image:radial-gradient(ellipse_at_center,transparent_50%,white)]"></div>
 
-        <div className="w-full pt-5 px-2.5 md:w-2/3 md:p-20">
+        <div className="w-full pt-5 px-2.5 md:w-2/3 md:px-20">
           <TextGenerateEffect
             words="How can I help you?"
             className="mb-5 text-2xl md:text-4xl font-semibold text-white"
