@@ -108,16 +108,16 @@ export const FloatingNav = ({
       >
         <Link
           href="/"
-          className="relative items-center flex space-x-1  hover:text-green-500 font-semibold"
+          className="relative items-center flex space-x-1 text-neutral-700 hover:text-green-500 font-semibold"
         >
-          <IconHome size={20} />
+          <IconHome size={24} />
         </Link>
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative items-center flex space-x-1  hover:text-green-500 font-semibold",
+              "relative items-center flex space-x-1 text-3xl hover:text-green-500 font-semibold",
               path.startsWith(navItem.link)
                 ? "text-green-500"
                 : "text-neutral-700"

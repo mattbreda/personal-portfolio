@@ -27,17 +27,17 @@ const navItems = [
   {
     name: "Portfolio",
     link: "/portfolio",
-    icon: <IconList className="h-4 w-4" />,
+    icon: <IconList  size={24}/>,
   },
   {
     name: "About",
     link: "/about",
-    icon: <IconUser className="h-4 w-4" />,
+    icon: <IconUser  size={24}/>,
   },
   {
     name: "Contact",
     link: "/contact",
-    icon: <IconMessage className="h-4 w-4" />,
+    icon: <IconMessage size={24}/>,
   },
 ];
 

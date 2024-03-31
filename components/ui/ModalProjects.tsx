@@ -7,7 +7,6 @@ import Button from "./Button";
 import Link from "next/link";
 import { IconX } from "@tabler/icons-react";
 
-
 export const ModalProjects = ({
   projectDetails,
   isOpen,
@@ -26,14 +25,13 @@ export const ModalProjects = ({
   isOpen: boolean;
   close: () => void;
 }) => {
-
   /*   const [showModal, setShowModal] = useState(false); */
   return (
     <div>
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 z-[100] flex items-center justify-center glass"
+            className="fixed inset-0 flex items-center justify-center glass z-[10000]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -63,7 +61,7 @@ export const ModalProjects = ({
               }}
             >
               <div
-                className="absolute top-2.5 right-2.5 cursor-pointer"
+                className="fixed md:absolute top-[1.75rem] right-[1.25rem] md:top-2.5 md:right-2.5 cursor-pointer"
                 onClick={close}
               >
                 <IconX
@@ -120,10 +118,16 @@ export const ModalProjects = ({
               <p className="py-2.5 text-slate-100">
                 {projectDetails?.description}
               </p>
-              <div className="w-full flex justify-end mt-auto">
+              <div className="w-full flex justify-between mt-auto">
+                {projectDetails?.url ? (
+                  <Button label="Close" onClick={close} />
+                ) : null}
                 {projectDetails?.url ? (
                   <Link href={projectDetails?.url} target="_blank">
-                    <Button label="Visit" />
+                    <Button
+                      label="Visit project"
+                      className="bg-green-500 text-slate-100"
+                    />
                   </Link>
                 ) : null}
               </div>

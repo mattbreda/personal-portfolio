@@ -44,9 +44,9 @@ const DirectActions = () => {
       <Link href="https://t.me/mttbreda">
         <IconBrandTelegram size={48} className="text-green-500" />
       </Link>
-      <Link href="https://wa.me/393495809133">
+      {/* <Link href="https://wa.me/393495809133">
         <IconBrandWhatsapp size={48} className="text-green-500" />
-      </Link>
+      </Link> */}
     </>
   );
 };

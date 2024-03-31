@@ -100,6 +100,7 @@ export const ProjectsGrid = () => {
             containerClassName={`${
               i === 1 ? "md:col-span-2" : ""
             }  justify-start`}
+            onClick={() => handleClick(item)}
           >
             <CardBody className="bg-neutral-700 relative group/card  border-black/[0.1] w-full h-auto rounded-xl p-2.5 border">
               <CardItem
@@ -136,7 +137,7 @@ export const ProjectsGrid = () => {
               </CardItem>
               <div className="flex justify-end items-center mt-2.5">
                 <CardItem translateZ={20}>
-                  <Button label="Explore" onClick={() => handleClick(item)} />
+                  <Button label="Explore" />
                 </CardItem>
               </div>
             </CardBody>
