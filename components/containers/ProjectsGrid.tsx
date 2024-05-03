@@ -20,17 +20,20 @@ import bea2 from "@/public/screens/bea-2.jpg";
 import ftwSmall from "@/public/screens/ftw-1-scaled.jpg";
 import ftw1 from "@/public/screens/ftw-1.jpg";
 import ftw2 from "@/public/screens/ftw-2.jpg";
-
+import aa1 from "@/public/screens/aa-1.jpg";
+import aa2 from "@/public/screens/aa-2.jpg";
+import fes1 from "@/public/screens/fes-1.jpg";
+import fes2 from "@/public/screens/fes-2.jpg";
 const projects = [
   {
-    title: "Giulia Faraon",
+    title: "AA - Associates Architecture",
     categories: ["website"],
-    tech: ["Nuxt", "Prismic"],
+    tech: ["Next", "Prismic", "React"],
     description:
-      "Personal website and portfolio made for Giulia Faraon, art director and digital designer. The frontend is built using Nuxt.js while the content is provided by Prismic, the headless CMS.",
-    url: "https://giuliafaraon.com/",
-    image: giuliaSmall,
-    images: [giulia1, giulia2],
+      "Portforlio and archive made for Associates Architecture studio based in Brescia. *Project made in collaboration with Noter",
+    url: "https://www.associatesarchitecture.it/",
+    image: aa1,
+    images: [aa1, aa2],
   },
   {
     title: "The Syllabus",
@@ -43,26 +46,6 @@ const projects = [
     images: [ts1, ts2],
   },
   {
-    title: "Edge*",
-    categories: ["website"],
-    tech: ["Nuxt", "Prismic"],
-    description:
-      "Institutional website made for Edge MGMT. The frontend is built using Nuxt.js while the content is provided by Prismic, the headless CMS. *Project made in collaboration with Noter",
-    url: "https://www.edgemgmt.it/",
-    image: edgeSmall,
-    images: [edge1, edge2],
-  },
-  /*  {
-    title: "Future of Work - Digital Archive",
-    categories: ["webapp"],
-    tech: ["React"],
-    description:
-      "A platform to search high quality content on the future of work and the digital transition.",
-    url: "https://futureofwork.fes.de/digital-archive",
-    image: "",
-  }, */
-
-  {
     title: "Bea*",
     categories: ["website"],
     tech: ["Next", "Prismic", "Algolia"],
@@ -73,6 +56,27 @@ const projects = [
     images: [bea1, bea2],
   },
   {
+    title: "Edge*",
+    categories: ["website"],
+    tech: ["Nuxt", "Prismic"],
+    description:
+      "Institutional website made for Edge MGMT. The frontend is built using Nuxt.js while the content is provided by Prismic, the headless CMS. *Project made in collaboration with Noter",
+    url: "https://www.edgemgmt.it/",
+    image: edgeSmall,
+    images: [edge1, edge2],
+  },
+  {
+    title: "Future of Work - Digital Archive",
+    categories: ["webapp"],
+    tech: ["React"],
+    description:
+      "A platform to search high quality content on the future of work and the digital transition.",
+    url: "https://futureofwork.fes.de/digital-archive",
+    image: fes1,
+    images: [fes1, fes2],
+  },
+
+  {
     title: "FKTwkit",
     categories: ["website"],
     tech: ["Nuxt"],
@@ -81,6 +85,16 @@ const projects = [
     url: "https://www.the-syllabus.com/",
     image: ftwSmall,
     images: [ftw1, ftw2],
+  },
+  {
+    title: "Giulia Faraon",
+    categories: ["website"],
+    tech: ["Nuxt", "Prismic"],
+    description:
+      "Personal website and portfolio made for Giulia Faraon, art director and digital designer. The frontend is built using Nuxt.js while the content is provided by Prismic, the headless CMS.",
+    url: "https://giuliafaraon.com/",
+    image: giuliaSmall,
+    images: [giulia1, giulia2],
   },
 ];
 
@@ -98,7 +112,7 @@ export const ProjectsGrid = () => {
           <CardContainer
             key={i}
             containerClassName={`${
-              i === 1 ? "md:col-span-2" : ""
+              i === 1 || i === 2 ? "md:col-span-2" : ""
             }  justify-start`}
             onClick={() => handleClick(item)}
           >
@@ -128,8 +142,7 @@ export const ProjectsGrid = () => {
                 <Image
                   src={item.image}
                   height="240"
-                  width={i === 1 ? "895":"430"}
-
+                  width={i === 1 || i === 2 ? "895" : "430"}
                   className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                   alt="thumbnail"
                   placeholder="blur"
