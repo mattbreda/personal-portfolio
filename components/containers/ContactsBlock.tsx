@@ -13,7 +13,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 const MailAction = () => {
   const copyEmail = () => {
-    navigator.clipboard.writeText("info@matteobreda.dev");
+    navigator.clipboard.writeText("mattbreda@gmail.com");
     toast.success("Email copied to clipboard!", {
       style: {
         background: "#404040",
@@ -29,7 +29,7 @@ const MailAction = () => {
   };
   return (
     <>
-      <Link href="mailto:info@matteobreda.dev">
+      <Link href="mailto:mattbreda@gmail.com">
         <IconMailForward size={48} className="text-green-500" />
       </Link>
       <div className="cursor-pointer" onClick={() => copyEmail()}>
